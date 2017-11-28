@@ -116,6 +116,7 @@ ln -s /opt/utorrent-server-alpha-v3_3/utserver /usr/bin/utserver
 # for debian stretch
 wget http://ftp.br.debian.org/debian/pool/main/o/openssl/libssl-dev_1.0.1t-1+deb8u6_amd64.deb
 dpkg -i libssl-dev_1.0.1t-1+deb8u6_amd64.deb
+apt-get install -f
 utserver -settingspath /opt/utorrent-server-alpha-v3_3/ &
 #--------------------------
 echo INIT AS SERVICE UTORRENT
